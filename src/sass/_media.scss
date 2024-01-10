@@ -1,0 +1,467 @@
+@media (max-width: 1400px) {
+    .menu {
+        &_item {
+            padding-right: 29px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 40px;
+    }
+    .menu {
+        &_item {
+            padding-right: 21px;
+        }
+        &_link {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 50px;
+        }
+    }
+    .benefits {
+        padding-bottom: 34px;
+        &_card {
+            align-items: flex-start;
+        }
+    }
+
+    .mobile {
+        &_item {
+            max-width: 300px;
+        }
+    }
+    .car {
+        padding-bottom: 0;
+    }
+    .require {
+        padding-top: 20px;
+    }
+
+    .footer {
+        &_content {
+            &_app-links {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        &_item {
+            padding-right: 8px;
+        }
+        &_link {
+            font-size: 10px;
+        }
+    }
+
+    .subheader {
+        &_logo {
+            img {
+                width: 100%;
+            }
+        }
+        &_official {
+            font-size: 11px;
+        }
+        &_phone {
+            font-size: 18px;
+        }
+        &_btn {
+            margin-top: 21px;
+            height: 40px;
+            width: 100%;
+        }
+    }
+
+    .promo {
+        &_header {
+            font-size: 40px;
+        }
+        &_subheader {
+            font-size: 30px;
+        }
+    }
+
+    .benefits {
+        &_card {
+            flex-direction: column;
+            align-items: center;
+            &_icon {
+                margin-right: 0;
+            }
+            &_content {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        transition: 0.6s all;
+        &_active {
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border: none;
+        }
+        &_link {
+            font-size: 20px;
+        }
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+
+    .xs-visible {
+        display: block;
+    }
+
+    .subheader {
+        &_phone {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &_btn {
+            display: block;
+            width: 160px;
+            height: 40px;
+            font-size: 10px;
+            margin: 0 auto;
+            margin-top: 10px;
+            &:hover {
+                background-color: (to top, $blue-color 0%, #4ce2ff 100%);
+            }
+        }
+    }
+
+    .promo {
+        &_header {
+            font-size: 30px;
+        }
+        &_subheader {
+            font-size: 20px;
+        }
+    }
+
+    .benefits {
+        &_card {
+            &_header {
+                text-align: center;
+            }
+            &_text {
+                text-align: justify;
+            }
+        }
+    }
+
+    .footer {
+        &_content {
+            &_social-links {
+                display: flex;
+                justify-content: center;
+            }
+            &_app-links {
+                justify-content: center;
+            }
+            .row {
+                div + div {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    nav {
+        height: 30px;
+    }
+
+    .subheader {
+        height: 60px;
+        top: 30px;
+        margin-top: 0;
+        &_official {
+            display: none;
+        }
+        &_logo {
+            margin-top: 16px;
+        }
+        &_phone {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 11px;
+        }
+        &_btn {
+            width: 110px;
+            height: 22px;
+            font-size: 10px;
+            margin-top: 7px;
+            &:hover {
+                background-image: linear-gradient(to top, $blue-color 0%, #4ce2ff 100%);
+            }
+        }
+    }
+
+    .promo {
+        min-height: 400px;
+        padding: 93px 0 35px 0;
+        header {
+            height: 30px;
+        }
+        &_header {
+            
+            font-size: 30px;
+            padding: 0 24px;
+            line-height: 35px;
+        }
+        &_subheader {
+            font-size: 20px;
+            margin-top: 33px;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+        &_descr {
+            display: none;
+        }
+        &_btn {
+            width: 210px;
+            height: 50px;
+            margin-top: 72px;
+            font-size: 16px;
+            &:hover {
+                background-image: linear-gradient(to top, $blue-color 0%, #4ce2ff 100%);
+            }
+        }
+    }
+
+    .menu {
+        width: 85%;
+        &_item {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+        &_link {
+            display: block;
+        }
+    }
+
+    .benefits {
+        padding: 22px 0 36px;
+        .container {
+            .row {
+                margin-top: 0;
+            }
+        }
+        &_card {
+            margin-top: 23px;
+            &_icon {
+                width: 100px;
+                height: 100px;
+            }
+            &_content {
+                width: 100%;
+                margin-top: 27px;
+            }
+            &_header {
+                font-size: 16px;
+            }
+        }
+        
+    }
+
+    .mobile {
+        padding-bottom: 42px;
+        .row {
+            * + * {
+                margin-top: 30px;
+            }
+        }
+        &_item {
+            max-width: 90%;
+            margin-bottom: 0;
+        }
+        
+    }
+
+    .car {
+        .title {
+            display: none;
+        }
+        .subtitle {
+            display: none;
+        }
+        min-height: 393px;
+        &_img {
+            margin-top: 34px;
+            &_describe {
+                color: #FFF;
+            }
+        }
+    }
+
+    .require {
+        padding-bottom: 30px;
+        &_block {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        &_title {
+            font-size: 16px;
+        }
+        &_list {
+            margin-top: 5px;
+            padding-left: 32px;
+            li {
+                font-size: 14px;
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &_descr {
+            font-size: 14px;
+        }
+    }
+
+    .title {
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 16px;
+    }
+    .cities {
+        min-height: 360px;
+        background-size: cover;
+        .subtitle {
+            font-size: 14px;
+        }
+        &_link {
+            width: 100%;
+            text-align: center;
+            padding: 8px 5px;
+        }
+    }
+
+    .footer {
+        padding: 50px 5px 29px 5px;
+        .row {
+            gap: 16px;
+            div {
+                &:first-child {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        &_content {
+            &_main-links {
+                max-width: 285px;
+                flex-wrap: wrap;
+
+                &::before {
+                    display: none;
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    max-width: 253px;
+                    width: 90%;
+                    height: 4px;
+                    background-color: #1FBAD6;
+                }
+                &_sections {
+                    width: 100%;
+                    ul {
+                        width: 100%;
+                        justify-content: space-between;
+                        li {
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                        li + li {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &_about {
+                    ul {
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        li + li {
+                            margin-left: 9px;
+                        }
+                    }
+                }
+            }
+            &_app-links {
+                &_link {
+                    max-width: 75px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}
